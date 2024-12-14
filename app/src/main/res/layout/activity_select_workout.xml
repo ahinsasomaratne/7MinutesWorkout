@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/exercise_01"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/img_exercise_beltkicks"
+                    android:contentDescription="@string/image_description"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/belt_kicks"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/exercise_02"
+            android:layout_toEndOf="@id/exercise_01"
+            android:layout_marginStart="15dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/img_exercise_high_knee_running"
+                    android:contentDescription="@string/image_description"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/high_knee_running"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/exercise_03"
+            android:layout_below="@id/exercise_01"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/img_exercise_jumping_jacks"
+                    android:contentDescription="@string/image_description"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jumping_jacks"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/exercise_04"
+            android:layout_toEndOf="@id/exercise_03"
+            android:layout_below="@id/exercise_02"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/img_exercise_lunge"
+                    android:contentDescription="@string/image_description"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lunge"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/exercise_05"
+            android:layout_below="@id/exercise_03"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/img_exercise_plank"
+                    android:contentDescription="@string/image_description"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/plank"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/exercise_06"
+            android:layout_toEndOf="@id/exercise_05"
+            android:layout_below="@id/exercise_04"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/img_exercise_powerjacks"
+                    android:contentDescription="@string/image_description"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/power_jacks"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/exercise_07"
+            android:layout_below="@id/exercise_05"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/img_exercise_pushup"
+                    android:contentDescription="@string/image_description"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pushup"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/exercise_08"
+            android:layout_toEndOf="@id/exercise_07"
+            android:layout_below="@id/exercise_06"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/img_exercise_toetaps"
+                    android:contentDescription="@string/image_description"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/toe_taps"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/exercise_09"
+            android:layout_below="@id/exercise_07"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/img_exercise_walkingjacks"
+                    android:contentDescription="@string/image_description"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/walking_jacks"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/exercise_10"
+            android:layout_toEndOf="@id/exercise_09"
+            android:layout_below="@id/exercise_08"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/img_exercise_wallsits"
+                    android:contentDescription="@string/image_description"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wall_sits"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</ScrollView>

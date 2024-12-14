@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/header_title"
+        android:text="@string/wall_sits"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:id="@+id/exercise_image"
+        android:layout_below="@id/header_title"
+        android:src="@drawable/img_exercise_wallsits"
+        android:contentDescription="@string/image_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/start_btn"
+        android:layout_below="@id/exercise_image"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/play_text"
+                android:text="@string/start_exercise_btn"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_progress"
+        android:layout_below="@id/start_btn"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/steps_card"
+        android:layout_below="@id/show_progress"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/steps_title"
+                android:text="@string/steps_title"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/step_01"
+                android:layout_below="@id/steps_title"
+                android:text="@string/exercise_10_step_01"
+                android:textColor="@color/black"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/step_02"
+                android:layout_below="@id/step_01"
+                android:text="@string/exercise_10_step_02"
+                android:textColor="@color/black"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/step_03"
+                android:layout_below="@id/step_02"
+                android:text="@string/exercise_10_step_03"
+                android:textColor="@color/black"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
